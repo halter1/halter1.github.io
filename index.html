@@ -1,3 +1,38 @@
+<head>
+<meta charset="UTF-8">
+<title>Embedded Style Sheet</title>
+<style>
+ * {
+	box-sizing: border-box;
+}
+body {
+	font-family: sans-serif;
+}
+.container {
+	max-height: 100vh;
+	overflow-y: scroll;
+	border: 1px solid gray;
+	scroll-snap-type: mandatory;
+	scroll-snap-points-y: repeat(3rem);
+	scroll-snap-type: y mandatory;
+}
+li {
+	height: 100vh;
+	border-bottom: 1px solid white;
+	padding: 1rem;
+	font-size: 1.2rem;
+	color: white;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	scroll-snap-align: start;
+}
+</style>
+</head>
+<body>
+
+
 <div class="container">
 	<ul class="scroller">
 		<li>Lorem, ipsum dolor.</li>
@@ -9,3 +44,6 @@
 		<li>Aperiam, magni excepturi?</li>
 	</ul>
 </div>
+	
+	</body>
+</html>
